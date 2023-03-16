@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>{{message}}</title>
+</head>
+<body>
+	<h1>{{titre}} :</h1>
+	<p>{{message}}</p>
+	<form method="post" action="/submit">
+		<input type="text" name="login">
+	</form>
+	
+	{{#user}}
+	<a href="/logout">Déconnexion {{.}}</a>
+	{{/user}}
+</body>
+</html>
