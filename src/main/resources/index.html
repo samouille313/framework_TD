@@ -1,0 +1,23 @@
+{{ > main/header}}
+<h1>Test</h1>
+{{#master}}
+<form method="post" action="/master/add" class="ui form">
+    <div class="two fields">
+        <div class="field">
+            <input type="text" name="name" placeholder="Nom">
+        </div>
+        <div class="field">
+            <input type="text" name="domaine" placeholder="Domaine">
+        </div>
+    </div>
+
+    <div class="field">
+        <input type="email" name="email" placeholder="Email">
+    </div>
+    <hr>
+    <textarea name="users" placeholder="Utilisateurs"></textarea>
+    <br>
+    <button type="submit" class="ui positive button">Valider</button>
+</form>
+{{/master}}
+{{ > main/footer}}
