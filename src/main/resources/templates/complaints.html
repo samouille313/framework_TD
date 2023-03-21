@@ -1,0 +1,8 @@
+{{> main/header }}
+<h1>Liste des plaintes pour le domaine {{ domain.name }}</h1>
+<ul>
+    {{#complaints}}
+    <li>{{ title }} - {{ description }}</li>
+    {{/complaints}}
+</ul>
+{{> main/footer }}
